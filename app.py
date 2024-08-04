@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as palm
 from dotenv import load_dotenv
 # Configure the API with your API key
-palm.configure(api_key= "GOOGLE_API_KEY")
+palm.configure(api_key= os.getenv("GOOGLE_API_KEY"))
 
 #Define the model to be used
 model_name = 'models/text-bison-001'
