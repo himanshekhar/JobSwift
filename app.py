@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import google.generativeai as palm
 from dotenv import load_dotenv
